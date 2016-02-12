@@ -1,0 +1,98 @@
+html, body{
+	font-family: "Roboto";
+}
+
+#background{
+	background-color: #eee6e3;
+}
+#tutorialsLogo{
+	padding-top: 5px;
+}
+#toDoBox{
+	margin-top: 110px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #FFFFFF;
+}
+.noMargin{
+	margin: 0px;
+}
+#header{
+	font-size: 40px;
+	color: #414B82;
+}
+#addButton{
+	background-color: #abc9ca;
+	float: right;
+}
+.span{
+	width: 2vw;
+}
+.Inline{
+	display: inline-block;
+}
+#taskOutput{
+	height: auto;
+	width: 100%;
+	font-family: "Quicksand";
+	margin-top: 20px;
+	font-size: 30px;
+	/*text-align: center;*/
+	background-color: #FFFFFF;
+	border: 7px double #EEEEEE;
+}
+#delete{
+	float: right;
+	padding-right: 20px;
+	cursor: pointer;
+	color: #c1c1c1;
+}
+#complete{
+	float: right;
+	padding-right: 40px;
+	padding-top: 5px;
+	cursor: pointer;
+	color: #c1c1c1;
+	font-size: 25px;
+
+}
+
+.strike-through {
+	text-decoration:line-through;
+}
+.nav-wrapper{
+	background-color:#3D3F4D;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+#logo{
+	max-height: 50px;
+	max-width: 50px;
+}
+#top{
+	margin: none;
+	display: inherit;
+}
+#companyName{
+	font-size:30px;
+	color: #6C6E77;
+}
+#symbol{
+	padding-top: 15px;
+	height: 45px;
+	width: 110px;
+}
+   /* label focus color */
+.input-field input[type=text]:focus + label {
+     color: #FBC02D;
+}
+   /* label underline focus color */
+.input-field input[type=text]:focus {
+     border-bottom: 1px solid #FBC02D;
+     box-shadow: 0 1px 0 0 #FBC02D;
+}
+   /* valid color */
+.input-field input[type=text].valid {
+     border-bottom: 1px solid #FBC02D;
+     box-shadow: 0 1px 0 0 #FBC02D;
+}

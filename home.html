@@ -1,0 +1,78 @@
+<div ng-controller = "homeController">
+  <!--NAVBAR-->
+  <nav>
+    <div class="nav-wrapper col s12">
+      <a>
+        <i class="right"><h5>{{userName}}</h5></i>
+      </a>
+      <a 
+        id="tutorialsLogo" 
+        class="brand-logo center hide-on-med-and-down">
+        <img 
+          id ="logo" 
+          src="public/images/logo_head_transparent_bg.png">
+      </a>
+      <ul>
+        <li id="companyName">
+          <a class="pointer hide-on-small-and-down" ui-sref="Login">
+            <img 
+              id="symbol" 
+              src="public/images/logo_White.png"/>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!--ADD TASK BOX-->
+  <div class="row noMargin">
+    <div class="col l3 m2 s1 blend">.</div>
+    <div class="col l6 m8 s10">
+      <div id="toDoBox" class="z-depth-1">
+        <br>
+        <p id="header" class="center-align">To Do List</p>
+        <br>
+        <div class="row">
+          <div class="input-field col s12">
+            <input 
+              ng-model="task"
+              placeholder="Task Description" 
+              type="text"/>
+            <input
+              type="button"
+              class="userBtn"
+              value="Add"
+              ng-click="addTask(task)"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col l3 m2 s1 blend">.</div>
+  </div>
+  <!--LIST OUTPUT-->
+  <div class="row">
+    <div class="col l3 m2 s1 blend">.</div>
+    <div class="col l6 m8 s10">
+      <div id="taskOutput" 
+        class="z-depth-1 Inline" 
+        ng-repeat = "task in allTasks track by $index">
+        <span
+          ng-class="{ 'strike-through' : task.completed_status}"
+          class="Inline"> {{task.description}}
+        </span>
+        <span
+          class="Inline" 
+          id="delete" 
+          ng-click ="deleteTask(task._id, $index); task.instance.deleted_status = true">
+          X
+        </span>
+        <span
+            class="Inline right" 
+            ng-click ="completeTask(task._id); task.completed_status = true">
+            <i id="complete">√</i>
+        </span>
+      </div>
+    </div>
+    <div class="col l3 m8 s10 blend">.</div>
+  </div>
+<!--CLOSING DIV-->    
+</div>

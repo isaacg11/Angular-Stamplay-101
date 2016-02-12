@@ -1,0 +1,10 @@
+{
+  "appId": "todolistapp",
+  "apiKey": "0298aa8b9e1b57760c4950d678bc83a4f1c38240933ea28ec20d3c8c45522ea1",
+  "public": "./",
+  "ignore": [
+    "stamplay.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

@@ -1,0 +1,36 @@
+<html ng-app="stamplay">
+  <head>
+    <meta charset="utf-8">
+    <title>Stamplay 101</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--MATERIALIZE LINKS-->
+    <link type="text/css" rel="stylesheet" href="public/css/materialize.css"/>
+    <link type="text/css" rel="stylesheet" href="public/css/home.css"/>
+    <link type="text/css" rel="stylesheet" href="public/css/login.css"/>
+    <link type='text/css' rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quicksand:300' >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+  <body id="background">
+
+  <ui-view></ui-view>
+
+    <!--LIBRARIES/FRAMEWORKS/WRAPPERS -->
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="./bower_components/angular-stamplay/angular-stamplay.js">
+    </script>
+    <!--STAMPLAY SDK -->
+    <script src="//drrjhlchpvi7e.cloudfront.net/libs/stamplay-js-sdk/2.0.1/stamplay.min.js"></script>
+
+
+    <!--APP SCRIPTS -->
+    <script src="./public/app.js"></script>
+    <script src="./public/services/homeFactory.js"></script>
+    <script src="./public/controllers/homeController.js"></script>
+    <script src="./public/controllers/loginController.js"></script>
+    <script src="./public/controllers/signupController.js"></script>
+    <script src="./public/js/materialize.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+.blend{
+	color: #EEE6E3;
+}
+.box{
+	background-color: #fff;
+	margin-top: 200px;
+	padding: 15px;
+	border: 7px double #EEEEEE;
+}
+.userInput{
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	border: 1px solid #EEEEEE;
+}
+.userBtn{
+	background-color: #888DA4;
+	color: #fff;
+	width: 100%;
+	margin-bottom: 20px; 
+}
+.userBtn:hover{
+	background-color: #b7bac8;
+	color: #fff;
+	width: 100%; 
+	margin-bottom: 20px; 
+}
+.pointer{
+	cursor: pointer;
+}

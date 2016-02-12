@@ -1,0 +1,20 @@
+<div ng-controller = "loginController">
+
+  <div class="row">
+    <div class="col l4 m2 s1 blend">.</div>
+    <div class="col l4 m8 s10">
+      <div class="box z-depth-1">
+        <h4>Login</h4>
+        <input class="userInput" placeholder="EMAIL...." ng-model="em"/>
+        <input class="userInput" placeholder="PASSWORD...." ng-model="pass"/>
+        <input class="userBtn" type="button" value="LOGIN" ng-click="login()"/>
+      </div>
+      <p class="center">Don't have an account? 
+        <a class="pointer" ui-sref="Signup"><u>Signup!</u></a>
+      </p>
+    </div>
+    <div class="col l4 m2 s1 blend">.</div>
+  </div>
+
+<!--CLOSING DIV-->
+</div>
